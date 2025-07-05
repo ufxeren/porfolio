@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.background {
+    position: relative;
+    height: 100vh;
+    z-index: 0;
+    background: black;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('/src/img/background_4.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.logo{
+    display: flex;
+    font-size: 25px;
+    width: 70%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;            
+    padding: 15px 30px;
+}
+
+.div_1{
+    display: flex; 
+    justify-content: 
+    space-between; 
+    width: 100%;
+}
+
+.div_2{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 500;
+    flex-direction: column;
+}
+
+.div_2 h1{
+    animation: fadeInDown 2s forwards;
+}
+
+.logo_2 img{    
+    width: 18%;
+    border-radius: 50%;
+    /* animation: fadeIn_2 2s forwards; */
+}
+
+.logo_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInDown 2s forwards;
+}
+
+.btn{
+    background: white;
+    color: black;
+    font-size: 20px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    animation: fadeIn 2.5s forwards;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    margin-top: 70px;
+    margin-left: 30px;
+    background: gray;
+    display: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.email{
+    width: 100%;
+    height: 100%;
+    background: rgb(226, 226, 226);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from { 
+        margin: 0px;
+        opacity: 0;
+     }
+    to {
+        margin: 0px;
+        opacity: 1;
+     }
+
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate(0%, -100px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0%, 0);
+    }
+}
+
+@media (max-width: 1090px) {
+    .logo{
+        width: 60%;
+    }
+    ul{
+        width: 30%;
+    }
+
+    .logo_2 img{
+        width: 25%;
+    }
+
+    .menu{
+        height: 5%;
+    }
+
+    .menu div{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 735px) {
+    .logo{
+        width: 40%;
+    }
+    ul{
+        width: 40%;
+    }
+
+    .logo_2 img{
+        width: 30%;
+    }
+
+    .menu div{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 580px) {
+    .logo{
+        width: 20%;
+    }
+    ul{
+        width: 45%;
+    }
+
+    .logo_2 img{
+        width: 35%;
+    }
+
+    .menu{
+        font-size: 8px;
+        width: 25%;
+        height: 4%;
+    }
+}
+
+@media (max-width: 460px) {
+    .logo{
+        width: 5%;
+        font-size: 17px;
+    }
+    ul{
+        width: 35%;
+    }
+
+    .logo_2 img{
+        width: 45%;
+    }
+
+    .pages{
+        font-size: 13px;
+        margin: 17px 0px;
+    }
+
+    .social i{
+        font-size: 15px;
+    }
+
+    .menu{
+        width: 35%;
+        height: 3%;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo{
+        width: 0%;
+    }
+
+    .pages{
+        margin: 17px 0px;
+    }
+    
+}
