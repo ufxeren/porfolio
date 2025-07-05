@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const API_KEY = 'AIzaSyAMgYgHKz8aXQGVJ9u1Pa0d14EyEZDPVr8'; // 🔑 Replace with your Google API key
     const VIDEO_FOLDER_ID = '1g8RrmxJei-b3Ys6GfNivYLDqUhIF8z9C'; // 🎥 Google Drive video folder ID
     const LONG_VIDEO_FOLDER_ID = '1lfSbGwPLTSlU41NF-HrYdEN0lNsvbvge'; // 🎬 Long videos folder ID (replace with actual ID)
-    const THUMBNAIL_FOLDER = '/thumbnal/';
+    const THUMBNAIL_FOLDER = '../../thumbnal/';
     const TOTAL_IMAGES = 8;
 
     // === IMAGE SLIDER SETUP ===
