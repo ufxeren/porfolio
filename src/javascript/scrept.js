@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const VIDEO_FOLDER_ID = '1g8RrmxJei-b3Ys6GfNivYLDqUhIF8z9C'; // 🎥 Google Drive video folder ID
     const LONG_VIDEO_FOLDER_ID = '1lfSbGwPLTSlU41NF-HrYdEN0lNsvbvge'; // 🎬 Long videos folder ID (replace with actual ID)
     const THUMBNAIL_FOLDER = '../../thumbnal/';
-    const TOTAL_IMAGES = 8;
+    const TOTAL_IMAGES = 9;
 
     // === IMAGE SLIDER SETUP ===
     const imageFiles = [];
